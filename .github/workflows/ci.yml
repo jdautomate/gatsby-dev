@@ -28,6 +28,9 @@ jobs:
         uses: actions/setup-node@v2.5.2
         with:
           node-version: '20'
-          cache-dependency-path: gatsby-dev/gatsby
+          cache: 'npm'
+          cache-dependency-path: './gatsby-dev/gatsby/package-lock.json'
 #       - run: cd gatsby
-      - run: npm install
+      - name: install npm packages
+        run: npm install
+        working-directory: gatsby
