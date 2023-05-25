@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: gatsby
 
 # Controls when the workflow will run
 on:
@@ -24,12 +24,8 @@ jobs:
     steps:
       - uses: actions/setup-node@v2.5.2
         with:
-          node-version: 20
-          # Used to specify a package manager for caching in the default directory. Supported values: npm, yarn, pnpm
-#           cache: npm
-#           cache-dependency-path: gatsby
+          node-version: '20'
       
-      - name: Setup Node.js environment
-        run: |
+      - run: |
           ls -l 
           echo npm installed
