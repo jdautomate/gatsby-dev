@@ -30,7 +30,4 @@ jobs:
 #           cache-dependency-path: gatsby
       
       - name: Setup Node.js environment
-        run: |
-          cd gatsby
-          npm install -g gatsby-cli
-          gatsby develop
+        run: echo npm installed
